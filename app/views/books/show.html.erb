@@ -2,4 +2,5 @@
 <p>Find me in app/views/books/show.html.erb</p>
 
 
-<%= link_to "Update Book", edit_book_path(@book) %>
+<%= link_to "edit", edit_book_path(@book) %>
+<%= link_to "destroy", book_path(@book), method: :delete %>
