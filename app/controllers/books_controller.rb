@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   end
 
   def index
-    @book = Book.all
+    @books = Book.all
   end
 
   def show
@@ -34,7 +34,7 @@ class BooksController < ApplicationController
   def destroy
     book = Book.find(params[:id])
     book.destroy
-    redirect_to book_path
+    redirect_to books_path
   end
 
   private

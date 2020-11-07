@@ -1,6 +1,14 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<table>
+    <tr>
+        <td>Title
+            <p><%= @book.title %></p>
+        </td>
+        <td>Body
+            <p><%= @book.body %></p>
+        </td>
+    </tr>
+</table>
 
 
 <%= link_to "edit", edit_book_path(@book) %>
-<%= link_to "destroy", book_path(@book), method: :delete %>
+<%= link_to "Back", books_path(@book) %>
