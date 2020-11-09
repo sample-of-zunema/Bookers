@@ -30,13 +30,17 @@
  }
 
  h1 {
-     margin: 17px;
+     margin: 17px 17px 17px 0;
  }
 
  strong {
    font-weight: bold;
    padding-left: 7px;
    padding-right: 7px;
+ }
+
+ table {
+   padding-bottom: 10px;
  }
 
  p {
@@ -55,3 +59,38 @@
      padding-left: 5px;
      padding-right: 5px;
  }
+
+ .flex {
+   display: flex;
+ }
+
+ h2 {
+   display: block;
+   margin: 16px 16px 16px 0;
+ }
+
+ form {
+   display: block;
+ }
+
+input#book_title {
+  margin-bottom: 10px;
+}
+
+ textarea {
+   display: block;
+ }
+
+ textarea#book_body {
+   display: block;
+ }
+
+ input {
+   display: block;
+   padding: 1px 6px;
+   margin-top: 5px;
+ }
+
+label {
+  display: block;
+}

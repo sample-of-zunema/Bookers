@@ -4,15 +4,21 @@
 
 <table>
     <tr>
-        <td>Title
-            <p><%= @book.title %></p>
+        <td class="flex">
+            <p>
+                <strong>Title</strong>
+                <%= @book.title %><
+            </p>
         </td>
-        <td>Body
-            <p><%= @book.body %></p>
+        <td class="flex">
+            <p>
+                <strong>Body</strong>
+                <%= @book.body %>
+            </p>
         </td>
     </tr>
 </table>
 
 
 <%= link_to "edit", edit_book_path(@book) %>
-<%= link_to "Back", books_path(@book) %>
+<%= link_to "Back", books_path %>
