@@ -29,9 +29,14 @@
     margin: 33px;
  }
 
+ h1 {
+     margin: 17px;
+ }
 
  strong {
    font-weight: bold;
+   padding-left: 7px;
+   padding-right: 7px;
  }
 
  p {
@@ -39,4 +44,14 @@
    font-size: 13px;
    line-height: 18px;
    margin: 33px;
+ }
+
+ th {
+     padding-bottom: 5px;
+ }
+
+ td {
+     padding-bottom: 7px;
+     padding-left: 5px;
+     padding-right: 5px;
  }
