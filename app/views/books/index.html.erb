@@ -1,15 +1,6 @@
 <P id="notice">
   <%= notice %>
 </P>
-<%= form_with model:@book, local:true do |f| %>
-  <% if @book.errors.any? %>
-    <%= @book.errors.count %>
-    <% @book.errors.full_messages.each do |message| %>
-      <%= message %>
-    <% end %>
-  <% end %>
-<% end %>
-
 
 <h1>Books</h1>
 <table>
@@ -32,6 +23,16 @@
     <% end %>
   </tbody>
 </table>
+
+<%= form_with model:@book, local:true do |f| %>
+  <% if @book.errors.any? %>
+    <%= @book.errors.count %>
+    <% @book.errors.full_messages.each do |message| %>
+      <%= message %>
+    <% end %>
+  <% end %>
+<% end %>
+
 
 <h2>New book</h2>
 <%= form_with model:@book, local:true do |f| %>
